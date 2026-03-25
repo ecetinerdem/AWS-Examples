@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "delete bucket"
+echo "==delete bucket"
 
 if [ -z "$1" ]; then
     echo "there needs to be a bucket name eg ./bucket my-bucket-name"
