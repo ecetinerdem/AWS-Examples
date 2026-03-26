@@ -1,4 +1,3 @@
-# Import required libraries
 
 require "aws-sdk-s3"   # AWS SDK for interacting with S3
 require "pry"          # Debugging tool (like console.log)
