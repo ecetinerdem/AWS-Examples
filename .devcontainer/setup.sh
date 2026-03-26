@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 set -e
 
+# Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install Ruby (includes gem)
+sudo apt install ruby-full -y
+
+# Install Bundler
+gem install bundler
+
+# Install Java (OpenJDK 17 - recommended)
+sudo apt install openjdk-17-jdk -y
 
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
