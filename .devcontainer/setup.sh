@@ -13,6 +13,9 @@ gem install bundler
 # Install Java (OpenJDK 17 - recommended)
 sudo apt install openjdk-17-jdk -y
 
+# Install Maven
+sudo apt install maven -y
+
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip -o awscliv2.zip

@@ -10,7 +10,7 @@ bucket_name = ENV["BUCKET_NAME"]
 region = "eu-central-1"
 
 # Create an S3 client object (used to interact with AWS S3)
-client = Aws::S3::Client.new()
+client = Aws::S3::Client.new
 
 # Create a new S3 bucket
 resp = client.create_bucket(
