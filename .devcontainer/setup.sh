@@ -5,16 +5,27 @@ set -e
 sudo apt update && sudo apt upgrade -y
 
 # Install Ruby (includes gem)
-sudo apt install ruby-full -y
+# sudo apt install ruby-full -y
 
 # Install Bundler
-gem install bundler
+# gem install bundler
 
 # Install Java (OpenJDK 17 - recommended)
-sudo apt install openjdk-17-jdk -y
+# sudo apt install openjdk-17-jdk -y
 
 # Install Maven
-sudo apt install maven -y
+# sudo apt install maven -y
+
+# Install Terraform
+# sudo apt install -y gnupg software-properties-common
+# wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
+# gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
+# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+# sudo apt update
+# sudo apt-get install terraform
+
+
+
 
 cd /tmp
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
