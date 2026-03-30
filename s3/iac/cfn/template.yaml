@@ -1,0 +1,7 @@
+#https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-customresource.html
+AWSTemplateFormatVersion: 2010-09-09
+Description: "An example S3 Bucket"
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    # We do not need to supply bucketname aws will suplly for us
