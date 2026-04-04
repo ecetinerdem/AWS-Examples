@@ -16,6 +16,9 @@ sudo apt update && sudo apt upgrade -y
 # Install Maven
 # sudo apt install maven -y
 
+# Install Node and npm
+# sudo apt install -y nodejs npm
+
 # Install Terraform
 # sudo apt install -y gnupg software-properties-common
 # wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
